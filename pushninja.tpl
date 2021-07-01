@@ -12,6 +12,7 @@ ___INFO___
   "type": "TAG",
   "id": "cvt_temp_public_id",
   "version": 1,
+  "category": ["MARKETING"]
   "securityGroups": [],
   "displayName": "pushninja",
   "brand": {
