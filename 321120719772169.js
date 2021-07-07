@@ -1,4 +1,5 @@
 ! function(e) {
+    console.log('aaa')
     if (!document.getElementById(e)) {
         var c = document.createElement("script");
         c.src = "https://infinity-public-js.500apps.com/push/push.min.js",
