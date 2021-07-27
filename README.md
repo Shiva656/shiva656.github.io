@@ -7,7 +7,7 @@ As the customer base grows from various locations, there’s a wide scope for bu
 
 PushNinja serves you the best with easy setup options and enables advanced features to never miss anything that your target audience wanted. Target the locations, capture the leads, and grow your network to the corners of the world.
 
-- [Get Started](https://infinity.500apps.com) with your web push notification delivery with [PushNinja](https://infinity.500apps.com/pushninja)
+- [Get Started](https://infinity.500apps.com/pushninja) with your web push notification delivery with [PushNinja](https://pushninja.com)
 
 ### Installation 
 If your website integrates Google Tag Manager, adding web push to your site doesn't require any coding. All you'll have to do is add a new tag based on the NinjaPush community template published by Google.
@@ -38,3 +38,10 @@ If your website integrates Google Tag Manager, adding web push to your site does
 
 
 9. Users will receive the default welcome message from the website after subscribing to the notifications.
+
+
+### Support
+
+Contact support using the live chat of our application
+
+Report a bug, file a feature request or send a pull request in the issue tracker.
