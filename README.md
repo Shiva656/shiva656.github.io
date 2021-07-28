@@ -44,6 +44,7 @@ If your website integrates Google Tag Manager, adding web push to your site does
 
 Contact our support team through “Live Chat” or “Help us improve” options through our application.
 
+![alt text](https://500apps-sites-dev.s3.amazonaws.com/test/GTM+Image+1.png)
 
 
 
