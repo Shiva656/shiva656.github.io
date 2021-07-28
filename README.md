@@ -46,8 +46,9 @@ Contact our support team through “Live Chat” or “Help us improve” option
 
 ![alt text](https://500apps-sites-dev.s3.amazonaws.com/test/GTM+Image+1.png)
 
+![alt text](https://500apps-sites-dev.s3.amazonaws.com/test/GTM+Image+2.png)
 
-
+![alt text](https://500apps-sites-dev.s3.amazonaws.com/test/GTM+Image+3.png)
 
 Alternatively, you can contact us through mail at feedback@500apps.com 
 
