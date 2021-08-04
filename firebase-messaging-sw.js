@@ -1,2 +1,2 @@
-importScripts("https://infinity-public-js.500apps.com/push/listener.min.js");
+importScripts("http://127.0.0.1:8887/push/listener.min.js");
   
