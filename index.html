@@ -1,42 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PUSH</title>
-</head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>Basic - SaaS Landing Page</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-<!-- 	<script id="_agile_min_js" async type="text/javascript" src="https://d1gwclp1pmzk26.cloudfront.net/agile/agile-cloud.js">
-</script>
-<script type="text/javascript" >
-var Agile_API = Agile_API || {}; Agile_API.on_after_load = function(){
-_agile.set_account('cggkmvtp934tgh6b8mj3j7af0u', 'agiletraining', true);
-_agile_set_whitelist('YWdpbGV0cmFpbmluZw==');
-_agile.track_page_view();
-_agile_execute_web_rules();};
-</script> -->
-<script>
-    ((p,u,s,h)=>{
-         p._push={"apiKey":'9577845483094048'};
-         p._pushfcm = {
-           location:'dev'
-         };
-          let l,y;
-          l = u.getElementsByTagName('head')[0];
-          y = u.createElement('script');
-          y.async = 1;
-          y.id="pushninja_script"
-          y.src = s+h;
-          l.appendChild(y);})(window,document,'http://127.0.0.1:8887/push/','push.min.js');
-  </script>
-<!--   <script>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+        
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+                
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+        
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap-4.5.0.min.css">
+    
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+ <script>
 	((p,u,s,h,l,y)=>{
-       p._push={"apiKey":'3958908468284361'};
+       p._push={"apiKey":'4009345787285610'};
 	   p._pushfcm = {
-	       location:'ap1'
+	       location:'qa'
 	     };
           l = u.getElementsByTagName('head')[0];
 	      y = u.createElement('script');
@@ -44,534 +39,507 @@ _agile_execute_web_rules();};
         y.id="pushninja_script"
 	      y.src = s+h;
           l.appendChild(y);})(window,document,'https://infinity-public-js.500apps.com/push/','push.min.js');
-</script> -->
-<!--    <script
-      src="http://localhost:3000/client.js"
-      onload="/*_we.setApiKey('XpSYRcIwP5fNhhlgxcldsIUSh5'); 
-    _we.setEmail('xyz@gmail.com'); */
-     _we.init();"
-    ></script> -->
-  <canvas></canvas>
-  <!-- 
-        o
-         \_/\o
-        ( Oo)                    \|/
-        (_=-)  .===O-  ~~Z~A~P~~ -O-
-        /   \_/U'                /|\
-        ||  |_/
-        \\  |
-        {K ||
-         | PP
-         | ||
-         (__\\
-        
-        
-        -->
+</script>
+    
+</head>
 
-  <script>
-    "use strict";
-    ///////////////// worker thread code ///////////////////
-    const theLastExperience = (noWorkers) => {
-      "use strict";
-      // ---- robot structure ----
-      const struct = {
-        points: [
-          {
-            x: 0,
-            y: -4,
-            f(s, d) {
-              this.y -= 0.01 * s * ts;
-            },
-          },
-          {
-            x: 0,
-            y: -16,
-            f(s, d) {
-              this.y -= 0.02 * s * d * ts;
-            },
-          },
-          {
-            x: 0,
-            y: 12,
-            f(s, d) {
-              this.y += 0.02 * s * d * ts;
-            },
-          },
-          { x: -12, y: 0 },
-          { x: 12, y: 0 },
-          {
-            x: -3,
-            y: 34,
-            f(s, d) {
-              if (d > 0) {
-                this.x += 0.01 * s * ts;
-                this.y -= 0.015 * s * ts;
-              } else {
-                this.y += 0.02 * s * ts;
-              }
-            },
-          },
-          {
-            x: 3,
-            y: 34,
-            f(s, d) {
-              if (d > 0) {
-                this.y += 0.02 * s * ts;
-              } else {
-                this.x -= 0.01 * s * ts;
-                this.y -= 0.015 * s * ts;
-              }
-            },
-          },
-          {
-            x: -28,
-            y: 0,
-            f(s, d) {
-              this.x += this.vx * 0.025 * ts;
-              this.y -= 0.001 * s * ts;
-            },
-          },
-          {
-            x: 28,
-            y: 0,
-            f(s, d) {
-              this.x += this.vx * 0.025 * ts;
-              this.y -= 0.001 * s * ts;
-            },
-          },
-          {
-            x: -3,
-            y: 64,
-            f(s, d) {
-              this.y += 0.015 * s * ts;
-              if (d > 0) {
-                this.y -= 0.01 * s * ts;
-              } else {
-                this.y += 0.05 * s * ts;
-              }
-            },
-          },
-          {
-            x: 3,
-            y: 64,
-            f(s, d) {
-              this.y += 0.015 * s * ts;
-              if (d > 0) {
-                this.y += 0.05 * s * ts;
-              } else {
-                this.y -= 0.01 * s * ts;
-              }
-            },
-          },
-        ],
-        links: [
-          { p0: 3, p1: 7, size: 12, lum: 0.5 },
-          { p0: 1, p1: 3, size: 24, lum: 0.5 },
-          { p0: 1, p1: 0, size: 60, lum: 0.5, disk: 1 },
-          { p0: 5, p1: 9, size: 16, lum: 0.5 },
-          { p0: 2, p1: 5, size: 32, lum: 0.5 },
-          { p0: 1, p1: 2, size: 50, lum: 1 },
-          { p0: 6, p1: 10, size: 16, lum: 1.5 },
-          { p0: 2, p1: 6, size: 32, lum: 1.5 },
-          { p0: 4, p1: 8, size: 12, lum: 1.5 },
-          { p0: 1, p1: 4, size: 24, lum: 1.5 },
-        ],
-      };
-      class Robot {
-        constructor(color, light, size, x, y, struct) {
-          this.x = x;
-          this.points = [];
-          this.links = [];
-          this.frame = 0;
-          this.dir = 1;
-          this.size = size;
-          this.color = Math.round(color);
-          this.light = light;
-          // ---- create points ----
-          for (const p of struct.points) {
-            this.points.push(new Robot.Point(size * p.x + x, size * p.y + y, p.f));
-          }
-          // ---- create links ----
-          for (const link of struct.links) {
-            const p0 = this.points[link.p0];
-            const p1 = this.points[link.p1];
-            const dx = p0.x - p1.x;
-            const dy = p0.y - p1.y;
-            this.links.push(
-              new Robot.Link(
-                this,
-                p0,
-                p1,
-                Math.sqrt(dx * dx + dy * dy),
-                (link.size * size) / 3,
-                link.lum,
-                link.force,
-                link.disk
-              )
-            );
-          }
-        }
-        update() {
-          if (++this.frame % Math.round(20 / ts) === 0) this.dir = -this.dir;
-          if (this === pointer.dancerDrag && this.size < 16 && this.frame > 600) {
-            pointer.dancerDrag = null;
-            dancers.push(
-              new Robot(
-                this.color + 90,
-                this.light * 1.25,
-                this.size * 2,
-                pointer.x,
-                pointer.y - 100 * this.size * 2,
-                struct
-              )
-            );
-            dancers.sort(function (d0, d1) {
-              return d0.size - d1.size;
-            });
-          }
-          // ---- update links ----
-          for (const link of this.links) link.update();
-          // ---- update points ----
-          for (const point of this.points) point.update(this);
-          // ---- ground ----
-          for (const link of this.links) {
-            const p1 = link.p1;
-            if (p1.y > canvas.height * ground - link.size * 0.5) {
-              p1.y = canvas.height * ground - link.size * 0.5;
-              p1.x -= p1.vx;
-              p1.vx = 0;
-              p1.vy = 0;
-            }
-          }
-          // ---- center position ----
-          this.points[3].x += (this.x - this.points[3].x) * 0.001;
-        }
-        draw() {
-          for (const link of this.links) {
-            if (link.size) {
-              const dx = link.p1.x - link.p0.x;
-              const dy = link.p1.y - link.p0.y;
-              const a = Math.atan2(dy, dx);
-              // ---- shadow ----
-              ctx.save();
-              ctx.translate(link.p0.x + link.size * 0.25, link.p0.y + link.size * 0.25);
-              ctx.rotate(a);
-              ctx.drawImage(link.shadow, -link.size * 0.5, -link.size * 0.5);
-              ctx.restore();
-              // ---- stroke ----
-              ctx.save();
-              ctx.translate(link.p0.x, link.p0.y);
-              ctx.rotate(a);
-              ctx.drawImage(link.image, -link.size * 0.5, -link.size * 0.5);
-              ctx.restore();
-            }
-          }
-        }
-      }
-      Robot.Link = class Link {
-        constructor(parent, p0, p1, dist, size, light, force, disk) {
-          this.p0 = p0;
-          this.p1 = p1;
-          this.distance = dist;
-          this.size = size;
-          this.light = light || 1.0;
-          this.force = force || 0.5;
-          this.image = this.stroke(
-            "hsl(" + parent.color + " ,30%, " + parent.light * this.light + "%)",
-            true,
-            disk,
-            dist,
-            size
-          );
-          this.shadow = this.stroke("rgba(0,0,0,0.5)", false, disk, dist, size);
-        }
-        update() {
-          const p0 = this.p0;
-          const p1 = this.p1;
-          const dx = p1.x - p0.x;
-          const dy = p1.y - p0.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-          if (dist > 0.0) {
-            const tw = p0.w + p1.w;
-            const r1 = p1.w / tw;
-            const r0 = p0.w / tw;
-            const dz = (this.distance - dist) * this.force;
-            const sx = (dx / dist) * dz;
-            const sy = (dy / dist) * dz;
-            p1.x += sx * r0;
-            p1.y += sy * r0;
-            p0.x -= sx * r1;
-            p0.y -= sy * r1;
-          }
-        }
-        stroke(color, axis, disk, dist, size) {
-          let image;
-          if (noWorkers) {
-            image = document.createElement("canvas");
-            image.width = dist + size;
-            image.height = size;
-          } else {
-            image = new OffscreenCanvas(dist + size, size);
-          }
-          const ict = image.getContext("2d");
-          ict.beginPath();
-          ict.lineCap = "round";
-          ict.lineWidth = size;
-          ict.strokeStyle = color;
-          if (disk) {
-            ict.arc(size * 0.5 + dist, size * 0.5, size * 0.5, 0, 2 * Math.PI);
-            ict.fillStyle = color;
-            ict.fill();
-          } else {
-            ict.moveTo(size * 0.5, size * 0.5);
-            ict.lineTo(size * 0.5 + dist, size * 0.5);
-            ict.stroke();
-          }
-          if (axis) {
-            const s = size / 10;
-            ict.fillStyle = "#000";
-            ict.fillRect(size * 0.5 - s, size * 0.5 - s, s * 2, s * 2);
-            ict.fillRect(size * 0.5 - s + dist, size * 0.5 - s, s * 2, s * 2);
-          }
-          return image;
-        }
-      };
-      Robot.Point = class Point {
-        constructor(x, y, fn, w) {
-          this.x = x;
-          this.y = y;
-          this.w = w || 0.5;
-          this.fn = fn || null;
-          this.px = x;
-          this.py = y;
-          this.vx = 0.0;
-          this.vy = 0.0;
-        }
-        update(robot) {
-          // ---- dragging ----
-          if (robot === pointer.dancerDrag && this === pointer.pointDrag) {
-            this.x += (pointer.x - this.x) * 0.1;
-            this.y += (pointer.y - this.y) * 0.1;
-          }
-          // ---- dance ----
-          if (robot !== pointer.dancerDrag) {
-            this.fn && this.fn(16 * Math.sqrt(robot.size), robot.dir);
-          }
-          // ---- verlet integration ----
-          this.vx = this.x - this.px;
-          this.vy = this.y - this.py;
-          this.px = this.x;
-          this.py = this.y;
-          this.vx *= 0.995;
-          this.vy *= 0.995;
-          this.x += this.vx;
-          this.y += this.vy + 0.01 * ts;
-        }
-      };
-      // ---- init ----
-      const dancers = [];
-      let ground = 1.0;
-      let canvas = { width: 0, height: 0, resize: true };
-      let ctx = null;
-      let pointer = { x: 0, y: 0, dancerDrag: null, pointDrag: null };
-      let ts = 1;
-      let lastTime = 0;
-      // ---- messages from the main thread ----
-      const message = (e) => {
-        switch (e.data.msg) {
-          case "start":
-            canvas.elem = e.data.elem;
-            canvas.width = canvas.elem.width;
-            canvas.height = canvas.elem.height;
-            ctx = canvas.elem.getContext("2d");
-            initRobots();
-            requestAnimationFrame(run);
-            break;
-          case "resize":
-            canvas.width = e.data.width;
-            canvas.height = e.data.height;
-            canvas.resize = true;
-            break;
-          case "pointerMove":
-            pointer.x = e.data.x;
-            pointer.y = e.data.y;
-            break;
-          case "pointerDown":
-            pointer.x = e.data.x;
-            pointer.y = e.data.y;
-            for (const dancer of dancers) {
-              for (const point of dancer.points) {
-                const dx = pointer.x - point.x;
-                const dy = pointer.y - point.y;
-                const d = Math.sqrt(dx * dx + dy * dy);
-                if (d < 60) {
-                  pointer.dancerDrag = dancer;
-                  pointer.pointDrag = point;
-                  dancer.frame = 0;
-                }
-              }
-            }
-            break;
-          case "pointerUp":
-            pointer.dancerDrag = null;
-            break;
-        }
-      };
-      // ---- resize screen ----
-      const resize = () => {
-        canvas.elem.width = canvas.width;
-        canvas.elem.height = canvas.height;
-        canvas.resize = false;
-        ground = canvas.height > 500 ? 0.85 : 1.0;
-        for (let i = 0; i < dancers.length; i++) {
-          dancers[i].x = ((i + 2) * canvas.width) / 9;
-        }
-      };
-      // ---- main loop ----
-      const run = (time) => {
-        requestAnimationFrame(run);
-        if (canvas.resize === true) resize();
-        // ---- adjust speed to screen freq ----
-        if (lastTime !== 0) {
-          const t = (time - lastTime) / 16;
-          ts += (t - ts) * 0.1;
-          if (ts > 1) ts = 1;
-        }
-        lastTime = time;
-        // ---- clear screen ----
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = "#222";
-        ctx.fillRect(0, 0, canvas.width, canvas.height * 0.15);
-        ctx.fillRect(0, canvas.height * 0.85, canvas.width, canvas.height * 0.15);
-        // ---- animate robots ----
-        for (const dancer of dancers) {
-          dancer.update();
-          dancer.draw();
-        }
-      };
-      const initRobots = () => {
-        // ---- instanciate robots ----
-        ground = canvas.height > 500 ? 0.85 : 1.0;
-        for (let i = 0; i < 6; i++) {
-          dancers.push(
-            new Robot(
-              (i * 360) / 7,
-              80,
-              Math.sqrt(Math.min(canvas.width, canvas.height)) / 6,
-              ((i + 2) * canvas.width) / 9,
-              canvas.height * 0.5 - 100,
-              struct
-            )
-          );
-        }
-      };
-      // ---- main thread vs. worker
-      if (noWorkers) {
-        // ---- emulate postMessage interface ----
-        return {
-          postMessage(data) {
-            message({ data: data });
-          },
-        };
-      } else {
-        // ---- worker messaging ----
-        onmessage = message;
-      }
-    };
-    ///////////////// main thread code ///////////////////
-    let worker = null;
-    const createWorker = (fn) => {
-      const URL = window.URL || window.webkitURL;
-      return new Worker(URL.createObjectURL(new Blob(["(" + fn + ")()"])));
-    };
-    // ---- init canvas ----
-    const canvas = document.querySelector("canvas");
-    canvas.width = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
-    // ---- instanciate worker ----
-    if (window.Worker && window.OffscreenCanvas) {
-      // instanciating background worker from a function
-      worker = createWorker(theLastExperience);
-      // cloning OffscreenCanvas
-      const offscreen = canvas.transferControlToOffscreen();
-      // sending data to worker
-      worker.postMessage({ msg: "start", elem: offscreen }, [offscreen]);
-    } else {
-      // falling back execution to the main thread
-      worker = theLastExperience(true);
-      worker.postMessage({ msg: "start", elem: canvas });
-    }
-    // ---- resize event ----
-    window.addEventListener(
-      "resize",
-      () => {
-        worker.postMessage({
-          msg: "resize",
-          width: canvas.offsetWidth,
-          height: canvas.offsetHeight,
-        });
-      },
-      false
-    );
-    // ---- pointer events ----
-    const pointer = {
-      x: 0,
-      y: 0,
-      down(e) {
-        this.move(e);
-        worker.postMessage({
-          msg: "pointerDown",
-          x: this.x,
-          y: this.y,
-        });
-      },
-      up(e) {
-        worker.postMessage({
-          msg: "pointerUp",
-        });
-      },
-      move(e) {
-        if (e.targetTouches) {
-          e.preventDefault();
-          this.x = e.targetTouches[0].clientX;
-          this.y = e.targetTouches[0].clientY;
-        } else {
-          this.x = e.clientX;
-          this.y = e.clientY;
-        }
-        worker.postMessage({
-          msg: "pointerMove",
-          x: this.x,
-          y: this.y,
-        });
-      },
-    };
-    window.addEventListener("mousemove", (e) => pointer.move(e), false);
-    canvas.addEventListener("touchmove", (e) => pointer.move(e), false);
-    window.addEventListener("mousedown", (e) => pointer.down(e), false);
-    window.addEventListener("touchstart", (e) => pointer.down(e), false);
-    window.addEventListener("mouseup", (e) => pointer.up(e), false);
-    window.addEventListener("touchend", (e) => pointer.up(e), false);
-  </script>
-  <style>
-    body,
-    html {
-      position: absolute;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->    
+   
+   
+    <!--====== PRELOADER PART START ======-->
 
-    canvas {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: #000;
-      cursor: pointer;
-    }
-  </style>
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+    
+    <!--====== HEADER PART START ======-->
+    
+    <header class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo.svg" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#features">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#facts">Why</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#team">Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#blog">Blog</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                            
+                            <div class="navbar-btn d-none d-sm-inline-block">
+                                <a class="main-btn" data-scroll-nav="0" href="https://uideck.com/templates/basic/" rel="nofollow">Download Now</a>
+                            </div>
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navbar area -->
+        
+        <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/banner-bg.svg)">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="header-hero-content text-center">
+                            <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Basic - SaaS Landing Page</h3>
+                            <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Kickstart Your SaaS or App Site</h2>
+                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                            <a href="#" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Get Started</a>
+                        </div> <!-- header hero content -->
+                    </div>
+                </div> <!-- row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header-hero-image text-center wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.4s">
+                            <img src="assets/images/header-hero.png" alt="hero">
+                        </div> <!-- header hero image -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div id="particles-1" class="particles"></div>
+        </div> <!-- header hero -->
+    </header>
+    
+    <!--====== HEADER PART ENDS ======-->
+    
+    <!--====== BRAMD PART START ======-->
+    
+    <div class="brand-area pt-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="brand-logo d-flex align-items-center justify-content-center justify-content-md-between">
+                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                            <img src="assets/images/brand-1.png" alt="brand">
+                        </div> <!-- single logo -->
+                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                            <img src="assets/images/brand-2.png" alt="brand">
+                        </div> <!-- single logo -->
+                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                            <img src="assets/images/brand-3.png" alt="brand">
+                        </div> <!-- single logo -->
+                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                            <img src="assets/images/brand-4.png" alt="brand">
+                        </div> <!-- single logo -->
+                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                            <img src="assets/images/brand-5.png" alt="brand">
+                        </div> <!-- single logo -->
+                    </div> <!-- brand logo -->
+                </div>
+            </div>   <!-- row -->
+        </div> <!-- container -->
+    </div>
+    
+    <!--====== BRAMD PART ENDS ======-->
+    
+    <!--====== SERVICES PART START ======-->
+    
+    <section id="features" class="services-area pt-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-title text-center pb-40">
+                        <div class="line m-auto"></div>
+                        <h3 class="title">Clean and simple design, <span> Comes with everything you need to get started!</span></h3>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-7 col-sm-8">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="services-icon">
+                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
+                            <img class="shape-1" src="assets/images/services-shape-1.svg" alt="shape">
+                            <i class="lni lni-baloon"></i>
+                        </div>
+                        <div class="services-content mt-30">
+                            <h4 class="services-title"><a href="#">Clean</a></h4>
+                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
+                            <a class="more" href="#">Learn More <i class="lni lni-chevron-right"></i></a>
+                        </div>
+                    </div> <!-- single services -->
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-8">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="services-icon">
+                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
+                            <img class="shape-1" src="assets/images/services-shape-2.svg" alt="shape">
+                            <i class="lni lni-cog"></i>
+                        </div>
+                        <div class="services-content mt-30">
+                            <h4 class="services-title"><a href="#">Robust</a></h4>
+                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
+                            <a class="more" href="#">Learn More <i class="lni lni-chevron-right"></i></a>
+                        </div>
+                    </div> <!-- single services -->
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-8">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="services-icon">
+                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
+                            <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape">
+                            <i class="lni lni-bolt-alt"></i>
+                        </div>
+                        <div class="services-content mt-30">
+                            <h4 class="services-title"><a href="#">Powerful</a></h4>
+                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
+                            <a class="more" href="#">Learn More <i class="lni lni-chevron-right"></i></a>
+                        </div>
+                    </div> <!-- single services -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    
+    <!--====== SERVICES PART ENDS ======-->
+    
+    <!--====== ABOUT PART START ======-->
+    
+    <section id="about" class="about-area pt-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="section-title">
+                            <div class="line"></div>
+                            <h3 class="title">Quick & Easy <span>to Use Bootstrap Template</span></h3>
+                        </div> <!-- section title -->
+                        <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
+                        <a href="#" class="main-btn">Try it Free</a>
+                    </div> <!-- about content -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <img src="assets/images/about1.svg" alt="about">
+                    </div> <!-- about image -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+        <div class="about-shape-1">
+            <img src="assets/images/about-shape-1.svg" alt="shape">
+        </div>
+    </section>
+    
+    <!--====== ABOUT PART ENDS ======-->
+    
+    <!--====== ABOUT PART START ======-->
+    
+    <section class="about-area pt-70">
+        <div class="about-shape-2">
+            <img src="assets/images/about-shape-2.svg" alt="shape">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-lg-last">
+                    <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="section-title">
+                            <div class="line"></div>
+                            <h3 class="title">Modern design <span> with Essential Features</span></h3>
+                        </div> <!-- section title -->
+                        <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
+                        <a href="#" class="main-btn">Try it Free</a>
+                    </div> <!-- about content -->
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <img src="assets/images/about2.svg" alt="about">
+                    </div> <!-- about image -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+
+    <!--====== ABOUT PART START ======-->
+    
+    <section class="about-area pt-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="section-title">
+                            <div class="line"></div>
+                            <h3 class="title"><span>Crafted for</span> SaaS, App and Software Landing Page</h3>
+                        </div> <!-- section title -->
+                        <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
+                        <a href="#" class="main-btn">Try it Free</a>
+                    </div> <!-- about content -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <img src="assets/images/about3.svg" alt="about">
+                    </div> <!-- about image -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+        <div class="about-shape-1">
+            <img src="assets/images/about-shape-1.svg" alt="shape">
+        </div>
+    </section>
+    
+    <!--====== ABOUT PART ENDS ======-->
+
+    
+    <!--====== ABOUT PART ENDS ======-->
+    
+    <!--====== VIDEO COUNTER PART START ======-->
+    
+    <section id="facts" class="video-counter pt-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="video-content mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <img class="dots" src="assets/images/dots.svg" alt="dots">
+                        <div class="video-wrapper">
+                            <div class="video-image">
+                                <img src="assets/images/video.png" alt="video">
+                            </div>
+                            <div class="video-icon">
+                                <a href="https://www.youtube.com/watch?v=r44RKWyfcFw" class="video-popup"><i class="lni lni-play"></i></a>
+                            </div>
+                        </div> <!-- video wrapper -->
+                    </div> <!-- video content -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="counter-wrapper mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="counter-content">
+                            <div class="section-title">
+                                <div class="line"></div>
+                                <h3 class="title">Cool facts <span> about this app</span></h3>
+                            </div> <!-- section title -->
+                            <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        </div> <!-- counter content -->
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <div class="single-counter counter-color-1 d-flex align-items-center justify-content-center">
+                                    <div class="counter-items text-center">
+                                        <span class="count"><span class="counter">125</span>K</span>
+                                        <p class="text">Downloads</p>
+                                    </div>
+                                </div> <!-- single counter -->
+                            </div>
+                            <div class="col-4">
+                                <div class="single-counter counter-color-2 d-flex align-items-center justify-content-center">
+                                    <div class="counter-items text-center">
+                                        <span class="count"><span class="counter">87</span>K</span>
+                                        <p class="text">Active Users</p>
+                                    </div>
+                                </div> <!-- single counter -->
+                            </div>
+                            <div class="col-4">
+                                <div class="single-counter counter-color-3 d-flex align-items-center justify-content-center">
+                                    <div class="counter-items text-center">
+                                        <span class="count"><span class="counter">4.8</span></span>
+                                        <p class="text">User Rating</p>
+                                    </div>
+                                </div> <!-- single counter -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- counter wrapper -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    
+    <!--====== VIDEO COUNTER PART ENDS ======-->
+    
+
+    
+
+    
+    <!--====== FOOTER PART START ======-->
+    
+    <footer id="footer" class="footer-area pt-120">
+        <div class="container">
+            <div class="subscribe-area wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="subscribe-content mt-45">
+                            <h2 class="subscribe-title">Subscribe Our Newsletter <span>get reguler updates</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="subscribe-form mt-50">
+                            <form action="#">
+                                <input type="text" placeholder="Enter eamil">
+                                <button class="main-btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                 </div> <!-- row -->
+            </div> <!-- subscribe area -->
+            <div class="footer-widget pb-100">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                            <a class="logo" href="#">
+                                <img src="assets/images/logo.svg" alt="logo">
+                            </a>
+                            <p class="text">Lorem ipsum dolor sit amet consetetur sadipscing elitr, sederfs diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                            <ul class="social">
+                                <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
+                                <li><a href="#"><i class="lni lni-instagram-filled"></i></a></li>
+                                <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div> <!-- footer about -->
+                    </div>
+                    <div class="col-lg-5 col-md-7 col-sm-7">
+                        <div class="footer-link d-flex mt-50 justify-content-md-between">
+                            <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                                <div class="footer-title">
+                                    <h4 class="title">Quick Link</h4>
+                                </div>
+                                <ul class="link">
+                                    <li><a href="#">Road Map</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Refund Policy</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                </ul>
+                            </div> <!-- footer wrapper -->
+                            <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                                <div class="footer-title">
+                                    <h4 class="title">Resources</h4>
+                                </div>
+                                <ul class="link">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Page</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div> <!-- footer wrapper -->
+                        </div> <!-- footer link -->
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-5">
+                        <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                            <div class="footer-title">
+                                <h4 class="title">Contact Us</h4>
+                            </div>
+                            <ul class="contact">
+                                <li>+809272561823</li>
+                                <li>info@gmail.com</li>
+                                <li>www.yourweb.com</li>
+                                <li>123 Stree New York City , United <br> States Of America 750.</li>
+                            </ul>
+                        </div> <!-- footer contact -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- footer widget -->
+            <div class="footer-copyright">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright d-sm-flex justify-content-between">
+                            <div class="copyright-content">
+                                <p class="text">Designed and Developed by <a href="https://uideck.com" rel="nofollow">UIdeck</a></p>
+                            </div> <!-- copyright content -->
+                        </div> <!-- copyright -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- footer copyright -->
+        </div> <!-- container -->
+        <div id="particles-2"></div>
+    </footer>
+    
+    <!--====== FOOTER PART ENDS ======-->
+    
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->   
+    
+    <!--====== PART START ======-->
+    
+<!--
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-"></div>
+            </div>
+        </div>
+    </section>
+-->
+    
+    <!--====== PART ENDS ======-->
+
+
+
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-3.5.1-min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap-4.5.0.min.js"></script>
+    
+    <!--====== Plugins js ======-->
+    <script src="assets/js/plugins.js"></script>
+    
+    <!--====== Counter Up js ======-->
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    
+
+    
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.min.js"></script>
+    
+    <!--====== Particles js ======-->
+    <script src="assets/js/particles.min.js"></script>
+    
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    
 </body>
 
 </html>
