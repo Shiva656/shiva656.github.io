@@ -22,7 +22,7 @@
       })(window, document, "http://127.0.0.1:8081/", "convertpath.min.js");
     </script> -->
 
-<script>
+<!-- <script>
     ((p,u,s,h)=>{
          p._push={"apiKey":'5487114144634284'};
          p._pushfcm = {
@@ -35,33 +35,20 @@
           y.id="pushninja_script"
           y.src = s+h;
           l.appendChild(y);})(window,document,'https://infinity-public-js.500apps.com/push/','push.min.js');
-  </script>
-
-<!--   <script>
-    !(function(e) {
-  // Check whether id exist or not in dom.
-  if (!document.getElementById(e)) {
-    var z = document.createElement("div");
-    z.id = "app";
-    var c = document.createElement("script");
-    c.async = 1;
-    c.src = "https://widgets.500apps.com/dev/botup/botupchat.js";
-    c.type = "text/javascript";
-    c.id = e;
-    c.onload = () => {
-      // Decode the apikey.
-      let d = decodeURIComponent(decodeURIComponent("api_key"));
-      let r = window.atob(d);
-      // Call init method after loading script.
-      window._Botup.init(r.split("-")[0], r.split("-")[1], r.split("-")[2]);
-    };
-    document.lastChild.appendChild(z);
-    // Append script to dom.
-    var n = document.getElementsByTagName("script")[0];
-    n.parentNode.insertBefore(c, n);
-  }
-})("botup_script");
   </script> -->
+
+<script>
+      (function (s, i, t, e, r, p) {
+        p = i.getElementsByTagName("head")[0];
+        r = i.createElement("script");
+        r.async = 1;
+        r.src = t + e;
+        r.onload = () => {
+          s._sr_r_.init("7936056710384187", 5, "dev");
+        };
+        p.appendChild(r);
+      })(window, document, "http://127.0.0.1:8081/siterecording/", "siterecorder.min.js");
+    </script>
 </head>
 <body>
 
