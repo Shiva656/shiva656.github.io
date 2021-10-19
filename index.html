@@ -52,7 +52,21 @@
 
 </head>
 <body>
-
+    <canvas id="myCasnvas" width="200" height="100" style="border: 1px solid #d3d3d3"> Your browser does not support the HTML canvas tag.</canvas>
+    <canvas id="myCanvas" width="200" height="100" style="border: 3px solid #d3d3d3"> Your browser does not support the HTML canvas tag.</canvas>
+    <script>
+      var c = document.getElementById("myCasnvas");
+      var ctx = c.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.strokeText("Hello World", 10, 50);
+    </script>
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0, 0);
+      ctx.lineTo(260, 100);
+      ctx.stroke();
+    </script>
 <!-- notification for small viewports and landscape oriented smartphones -->
 <div class="device-notification">
   <a class="device-notification--logo" href="#0">
