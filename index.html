@@ -9,7 +9,19 @@
   <meta name="keywords" content="global, template, html, sass, jquery">
   <meta name="author" content="Bucky Maler">
   <link rel="stylesheet" href="assets/css/main.css"> 
-<script>
+  <script>
+	 (function(c, o, n, v, r, p) {
+      p = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = n + v;
+      r.onload = () => {
+          c._we.init('7354225653927584','dev')
+    };
+    p.appendChild(r);
+    })(window, document, 'https://infinity-public-js.500apps.com/', 'convertpath.min.js');
+</script>
+<!-- <script>
     ((p,u,s,h)=>{
          p._push={"apiKey":'3906696069409878'};
          p._pushfcm = {
@@ -22,7 +34,7 @@
           y.id="pushninja_script"
           y.src = s+h;
           l.appendChild(y);})(window,document,'http://127.0.0.1:8081/push/','push.min.js');
-  </script>
+  </script> -->
 <!-- <script>
     ((p,u,s,h)=>{
          p._push={"apiKey":'3906696069409878'};
