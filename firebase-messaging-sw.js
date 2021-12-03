@@ -1,1 +1,2 @@
-importScripts("http://127.0.0.1:8081/push/listener.min.js");
+// eslint-disable-next-line no-undef
+importScripts("https://infinity-public-js.500apps.com/push/listener.min.js");
