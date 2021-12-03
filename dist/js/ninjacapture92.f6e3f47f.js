@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["ninjacapture92"],{"7c1f":function(n,t,e){"use strict";e.r(t);var a=function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("div",[e("b-container",{staticClass:"mt-4"},[e("Jobs")],1)],1)},c=[],o=e("075b"),u={name:"recruit",components:{Jobs:o["default"]},data:function(){return{}},mounted:function(){},methods:{}},s=u,r=e("2877"),i=Object(r["a"])(s,a,c,!1,null,null,null);t["default"]=i.exports}}]);
-//# sourceMappingURL=ninjacapture92.f6e3f47f.js.map
