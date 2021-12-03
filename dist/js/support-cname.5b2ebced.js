@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["support-cname"],{"1ac2":function(e,n,t){"use strict";t.r(n);var c=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[t("b-container",[t("b-row",[t("b-col",[t("Element")],1)],1)],1)],1)},l=[],o=t("03cc"),a={components:{Element:o["default"]}},r=a,u=t("2877"),s=Object(u["a"])(r,c,l,!1,null,null,null);n["default"]=s.exports}}]);
+//# sourceMappingURL=support-cname.5b2ebced.js.map
